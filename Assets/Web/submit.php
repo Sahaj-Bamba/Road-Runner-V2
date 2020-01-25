@@ -7,7 +7,5 @@ include 'connection.php';
 
 	$result = $con->query("INSERT INTO `user_road`(`name`, `score`) VALUES ('$name','$score')");
 
-	echo "5";
-
 ?>
 
