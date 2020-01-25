@@ -17,7 +17,7 @@ public class LeaderboardLoad : MonoBehaviour {
 	IEnumerator scr(){
 		
 		string uri="www.youtube.com";		
-		using (UnityWebRequest webRequest = UnityWebRequest.Get("www.youtube.com"))
+		using (UnityWebRequest webRequest = UnityWebRequest.Get("https://blankseed.000webhostapp.com/RoadRunner/retrive.php"))
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();

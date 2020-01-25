@@ -2,7 +2,7 @@
 
 include 'connection.php';
 
-	$sql = "SELECT * FROM `user_road` ORDER BY 'score' Limit 5 ";
+	$sql = "SELECT * FROM `user` ORDER BY 'Score' Limit 5 ";
 
 	$result = $con->query($sql);
 
@@ -13,8 +13,9 @@ include 'connection.php';
 		echo $result->num_rows;
 	}
 	while ($col = $result->fetch_assoc()){
-		echo "+" . $col['name'] . "+" . $col['score'] ;
+		echo "+" . $col['Name'] . "+" . $col['Score'] ;
 	}
 
 ?>
 
+ 
