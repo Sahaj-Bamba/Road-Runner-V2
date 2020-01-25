@@ -75,7 +75,7 @@ public class touchmove : MonoBehaviour {
 		if(col.gameObject.tag == "barrier"){
 			//Debug.Log("Hi");
 
-			FindObjectOfType<ender>().end();
+			FindObjectOfType<Ender>().end();
 		}
 
 	}

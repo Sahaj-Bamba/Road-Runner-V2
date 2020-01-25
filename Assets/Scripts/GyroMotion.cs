@@ -33,6 +33,9 @@ public class GyroMotion : MonoBehaviour {
         	ply.position = new Vector3(-5.9f,ply.position.y,ply.position.z);
         	return;
         }
+    
     }
+
+    
     
 }

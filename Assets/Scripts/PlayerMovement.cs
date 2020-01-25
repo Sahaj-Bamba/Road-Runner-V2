@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
 		//rb.AddForce(0,0,frd_force * Time.deltaTime);
 		if(cnt>0){
 			cnt=0;
-			FindObjectOfType<ender>().end();
+			new Ender().end();
 		}
 		Vector3 temp = ply.position;
 

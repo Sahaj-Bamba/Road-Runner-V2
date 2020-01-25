@@ -4,13 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ender : MonoBehaviour {
+public class Ender : MonoBehaviour {
 
 	private float slow_fac = 50f;
-	//public Rigidbody rb;
 	public int game_controller=0;
-	public GameObject pn;
-
+	
 	public void end() {
 		if(game_controller == 0){
 			StartCoroutine(Restart());
@@ -31,9 +29,9 @@ public class ender : MonoBehaviour {
 		Time.timeScale = 1f;
 		Time.fixedDeltaTime = 0.002f;
 
-		pn.SetActive(true);
+		// pn.SetActive(true);
 
-		//SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene("End");
 
 		//Debug.Log(Time.fixedDeltaTime);
 

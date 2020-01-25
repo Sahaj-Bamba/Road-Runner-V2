@@ -9,8 +9,9 @@ public class score : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if(en_cnt.GetComponent<ender>().game_controller==0){
+		if(en_cnt.GetComponent<Ender>().game_controller==0){
 			scr.text = (Time.timeSinceLevelLoad*100).ToString("0");
 		}
+		
 	}
 }

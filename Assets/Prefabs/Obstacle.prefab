@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 23184467624947492}
   - component: {fileID: 65223696957836990}
   - component: {fileID: 54029083070014918}
-  - component: {fileID: 114460451947179198}
-  - component: {fileID: 114251916601331254}
+  - component: {fileID: 3035977255465437325}
+  - component: {fileID: 1079588666565643238}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: barrier
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9f232ee32cd42e0458bc6004527480b0, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -69,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -110,7 +111,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 4
   m_CollisionDetection: 1
---- !u!114 &114460451947179198
+--- !u!114 &3035977255465437325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,11 +120,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044346127981176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca5e5ad0c8a55e42934f6ddb370687b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6935253f7f01ef34f87dfd9cfe46c8af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frd_force: -150
---- !u!114 &114251916601331254
+  frd_force: -1000
+--- !u!114 &1079588666565643238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,6 +133,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044346127981176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d5260cae48441479dcb580fa789db5, type: 3}
+  m_Script: {fileID: 11500000, guid: 662aac6510117614da1f57f737aa21e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
